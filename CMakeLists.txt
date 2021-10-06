@@ -8,5 +8,5 @@ include_directories(facultate)
 include_directories(google-kickstart)
 
 add_executable(algorithms
-        facultate/arhitectura-calculatoarelor/seminar-1/baseConverter.cpp
+        facultate/structuri-de-date/seminar-1/operatiiVector.cpp
         readme.MD)
