@@ -4,9 +4,10 @@
 
 using namespace std;
 
-int calculPolinom(int x, int p[]) {
+// metoda prin care se pastreaza valoarea lui P prin functie
+template<typename T, size_t N>
+int calculPolinom(int x, T (&p)[N]) {
     int rezultat = p[0];
-    cout << p[0] << ' ' << p[1] << ' ' << p[2] << ' ' << p[3] << endl;
     cout << grad(p) << endl;
     for (int i = 1; i < grad(p); ++i) {
         rezultat = rezultat * x + p[i];
@@ -15,7 +16,7 @@ int calculPolinom(int x, int p[]) {
 }
 
 int main() {
-    int p[] = {1, 1, 1, 1};
+    int p[] = {1, 1, 1, 1, 1};
     cout << grad(p) << endl;
     int res = calculPolinom(10, p);
     cout << res;
